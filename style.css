@@ -1,0 +1,17 @@
+/* "Roboto" and "Playfair Display" */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  /* CSS console log remove later*/
+  /* outline: 2px solid red; */
+}
+
+/*
+Google fonts "Roboto" and "Playfair Display"
+Photo by Harry Cunningham @harry.digital: https://www.pexels.com/photo/brown-and-red-wooden-house-3405486/
+Photo by Andre Furtado: https://www.pexels.com/photo/man-standing-near-water-2916821/
+Github, Linkedin, Twitter-X icons from https://devicon.dev/
+Phone, email, external from https://materialdesignicons.com/
+*/
