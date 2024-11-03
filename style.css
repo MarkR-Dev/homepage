@@ -21,11 +21,16 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  /* max-width: xx */
+}
+
 /* Typography and Backgrounds */
 body {
   font-family: "Roboto";
   position: relative;
-  /* min-width: 300px; */
 }
 
 h1,
@@ -34,11 +39,15 @@ h3 {
   font-family: "Playfair Display";
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 .background {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background-color: var(--background-color);
   z-index: -99;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
@@ -49,9 +58,25 @@ main p {
   color: var(--font-color);
 }
 
+.project h3 {
+  font-size: 1.25rem;
+}
+
+.project p {
+  font-size: 1.1rem;
+}
+
 footer {
   background-color: var(--background-color);
   color: white;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+footer .fs-large {
+  font-size: 1.5rem;
 }
 
 .header-icons img,
@@ -68,3 +93,88 @@ footer {
 }
 
 /* Layout */
+
+/* main {
+  border: 1px solid red;
+}
+.project-container {
+  border: 1px solid blue;
+}
+.project {
+  border: 1px solid black;
+} */
+
+main {
+  padding-block: 50px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.proj-1 {
+  background-color: var(--proj-1);
+}
+.proj-2 {
+  background-color: var(--proj-2);
+}
+.proj-3 {
+  background-color: var(--proj-3);
+}
+.proj-4 {
+  background-color: var(--proj-4);
+}
+.proj-5 {
+  background-color: var(--proj-5);
+}
+.proj-6 {
+  background-color: var(--proj-6);
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project {
+  box-shadow: 0px 0px 10px 0px rgba(173, 173, 173, 1);
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.project-image {
+  height: 300px;
+}
+
+.project-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 180px;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-icons {
+  display: flex;
+  gap: 10px;
+}
+
+footer .icon-small {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
