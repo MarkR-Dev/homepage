@@ -47,10 +47,15 @@ h2 {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   background-color: var(--background-color);
   z-index: -99;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+}
+
+header p {
+  hyphens: auto;
+  font-size: 1.2rem;
 }
 
 header p,
@@ -96,17 +101,6 @@ footer .fs-large {
   width: 28px;
 }
 
-/* Layout */
-
-main {
-  padding-block: 50px;
-}
-
-main h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .proj-1 {
   background-color: var(--proj-1);
 }
@@ -126,6 +120,58 @@ main h2 {
   background-color: var(--proj-6);
 }
 
+/* Layout */
+
+header {
+  margin-bottom: 30px;
+}
+
+.header-content {
+  padding-top: 20px;
+}
+
+.header-image {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-block: 0 40px;
+  position: relative;
+}
+
+header h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: clamp(3rem, 100%, 4rem);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+header h2 {
+  text-align: center;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+main {
+  padding-block: 50px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .project-container {
   display: flex;
   flex-direction: column;
@@ -134,7 +180,7 @@ main h2 {
 
 .project {
   box-shadow: 0px 0px 10px 0px rgba(173, 173, 173, 1);
-  max-width: 450px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -180,7 +226,7 @@ footer .icon-small {
 .footer-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   width: 80%;
   margin: 0 auto;
   padding-block: 30px 50px;
