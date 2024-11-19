@@ -16,7 +16,8 @@ body {
   min-width: 320px;
 }
 
-img {
+img,
+picture {
   display: block;
   max-width: 100%;
 }
@@ -85,7 +86,7 @@ footer p {
 }
 
 .email {
-  font-size: 0.9rem;
+  word-break: break-all;
 }
 
 footer .fs-large {
@@ -169,7 +170,7 @@ header h2 {
 }
 
 main {
-  padding-block: 50px;
+  padding-block: 80px;
 }
 
 main h2 {
@@ -230,26 +231,57 @@ footer .icon-small {
 .footer-content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   width: 80%;
+  gap: 30px;
   margin: 0 auto;
   padding-block: 30px 50px;
 }
 
-.footer-img {
+.footer-img img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .project-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    padding-block: 50px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 80%;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .footer-content {
+    width: 50%;
+  }
+
+  .footer-icons {
+    justify-content: start;
+  }
+
+  .footer-img {
+    width: 45%;
   }
 }
 
 @media (min-width: 1200px) {
   .project-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-img {
+    width: 60%;
   }
 }
