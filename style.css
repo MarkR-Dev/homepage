@@ -240,6 +240,7 @@ footer .icon-small {
 .footer-img img {
   width: 100%;
   height: auto;
+  max-height: 750px;
   object-fit: cover;
 }
 
