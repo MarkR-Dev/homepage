@@ -136,7 +136,6 @@ footer .fs-large {
   margin-inline: auto;
   margin-block: 0 40px;
   position: relative;
-
   height: 500px;
   background-image: url("./img/woman-working.jpg");
   background-size: cover;
@@ -307,7 +306,7 @@ footer .icon-small {
     display: block;
     float: left;
     width: calc(var(--img-width) * 0.8 - 10px);
-    height: calc(var(--img-height) * 0.7 - 45px);
+    height: calc(var(--img-height) * 0.7 - 50px);
   }
 
   main h2 {
@@ -337,6 +336,10 @@ footer .icon-small {
     width: 50%;
   }
 
+  footer h2 {
+    text-align: left;
+  }
+
   .footer-icons {
     justify-content: start;
   }
@@ -347,6 +350,51 @@ footer .icon-small {
 }
 
 @media (min-width: 1200px) {
+  header .container {
+    padding-top: 70px;
+  }
+
+  .header-content {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .header-image {
+    position: relative;
+    width: 40%;
+    height: 500px;
+    transform: translate(0, 0);
+    margin: 0;
+  }
+
+  h1 {
+    inset: auto;
+    bottom: 0;
+    left: 20px;
+    width: auto;
+  }
+
+  .header-text {
+    width: 60%;
+    padding: 50px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgb(122, 122, 122);
+  }
+
+  .header-text h2 {
+    text-align: left;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .header-icons {
+    justify-content: end;
+  }
+
   .project-container {
     grid-template-columns: repeat(3, 1fr);
   }
